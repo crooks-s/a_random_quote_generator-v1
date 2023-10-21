@@ -33,6 +33,10 @@ const quotes = [
 ]
 
 
+// Random number generator to use with getRandomQuote function.
+// The random number will be used to access a random index in quotes array
+const randomNum = Math.floor(Math.random() * 5);
+
 /***
  * `getRandomQuote` function
 ***/
