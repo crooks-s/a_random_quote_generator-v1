@@ -12,11 +12,13 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
     quote: '',
-    source: ''
+    source: '',
+    citation: ''
   },
   {
     quote: '',
-    source: ''
+    source: '',
+    year: ''
   },
   {
     quote: '',
@@ -32,17 +34,16 @@ const quotes = [
   }
 ]
 
-
-// Random number generator to use with getRandomQuote function.
-// The random number will be used to access a random index in quotes array
-const randomNum = Math.floor(Math.random() * 5);
-
-/***
- * `getRandomQuote` function
-***/
-
+// This function retrieves a random quote from quotes array using
+// a random number generator
+const getRandomQuote = () => {
+  const randomNum = Math.floor(Math.random() * 5);
+  const getQuote = quotes[randomNum];
+  return getQuote;
+}
 
 
+// This will print the quote to 
 /***
  * `printQuote` function
 ***/
