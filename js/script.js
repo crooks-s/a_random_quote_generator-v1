@@ -94,7 +94,8 @@ const changeBgColor = () => {
   document.body.style.backgroundColor = `rgb(${rgbOne}, ${rgbTwo}, ${rgbThree})`;
 }
 
-// 
+// refresh quotes at set interval of seconds
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
