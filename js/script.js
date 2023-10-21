@@ -7,30 +7,39 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-// This array will store quote objects
-// source is name of person/character who said quote
+
+
+/* 
+  This array will store quote objects
+  .quote = actual quote
+  .source = name of person/character who said quote
+  .citation = reference to book/movie/song/etc.
+  .year = year the quote originated
+*/
+
 const quotes = [
   {
-    quote: '',
-    source: '',
-    citation: ''
+    quote: 'Only a Sith deals in absolutes.',
+    source: 'Obi-Wan Kenobi',
+    citation: 'Star Wars: Episode III - Revenge of the Sith',
+    year: '2005'
   },
   {
-    quote: '',
-    source: '',
-    year: ''
+    quote: 'GOD DID.',
+    source: 'DJ Khaled',
+    year: '2022'
   },
   {
-    quote: '',
-    source: ''
+    quote: "I don't have friends; I got family.",
+    source: 'Dominic Toretto'
   },
   {
-    quote: '',
-    source: ''
+    quote: "If you don't know, now you know.",
+    source: 'The Notorious B.I.G., Biggie Smalls'
   },
   {
-    quote: '',
-    source: '',
+    quote: 'Wakka wakka wakka.',
+    source: 'Pac-Man',
   }
 ]
 
