@@ -59,6 +59,17 @@ const getRandomQuote = () => {
   return quotes[randomNum];
 }
 
+// Changes background color for each time button is clicked
+const changeBgColor = () => {
+  // create random RGB value 0-255
+  const randomRGB = () => Math.floor(Math.random() * 255);
+
+  const rgbOne = randomRGB();
+  const rgbTwo = randomRGB();
+  const rgbThree = randomRGB();
+  document.body.style.backgroundColor = `rgb(${rgbOne}, ${rgbTwo}, ${rgbThree})`;
+}
+
 
 /* Stores quote object returned from getRandomQuote() and concatenates html code using string literals. The html code is then used to populate the quote-box in index.html
 */
@@ -80,18 +91,8 @@ const printQuote = () => {
   }
   html += `</p>`;
 
+  changeBgColor();
   document.getElementById('quote-box').innerHTML = html; 
-}
-
-// Changes background color for each time button is clicked
-const changeBgColor = () => {
-  // create random RGB value 0-255
-  const randomRGB = () => Math.floor(Math.random() * 255);
-
-  const rgbOne = randomRGB();
-  const rgbTwo = randomRGB();
-  const rgbThree = randomRGB();
-  document.body.style.backgroundColor = `rgb(${rgbOne}, ${rgbTwo}, ${rgbThree})`;
 }
 
 // refresh quotes at set interval of seconds
