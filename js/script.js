@@ -85,13 +85,16 @@ const printQuote = () => {
 
 // Changes background color for each time button is clicked
 const changeBgColor = () => {
+  // create random RGB value 0-255
   const randomRGB = () => Math.floor(Math.random() * 255);
+
   const rgbOne = randomRGB();
   const rgbTwo = randomRGB();
   const rgbThree = randomRGB();
   document.body.style.backgroundColor = `rgb(${rgbOne}, ${rgbTwo}, ${rgbThree})`;
 }
 
+// 
 
 /***
  * click event listener for the print quote button
