@@ -34,15 +34,20 @@ const quotes = [
   }
 ]
 
-// This function retrieves a random quote from quotes array using
-// a random number generator
+/*
+ Retrieves a random quote from quotes array using a random number generator.
+ @returns {object} The quote object
+*/
+
 const getRandomQuote = () => {
   const randomNum = Math.floor(Math.random() * 5);
   return quotes[randomNum];
 }
 
 
-// This will print the quote
+/* Stores quote object returned from getRandomQuote() and concatenates html code using string literals. The html code is then used to populate the quote-box in index.html
+*/
+
 const printQuote = () => {
   const randomQuote = getRandomQuote();
   let html = `
@@ -56,6 +61,8 @@ const printQuote = () => {
     html += `<span class="year">${randomQuote.year}</span>`;
   }
   html += `</p>`;
+
+  document.getElementById('quote-box').innerHTML = html; 
 }
 
 
