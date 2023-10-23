@@ -24,18 +24,15 @@ const quotes = [
     source: 'Obi-Wan Kenobi',
     citation: 'Star Wars: Episode III - Revenge of the Sith',
     year: '2005',
-    tag: 'movie'
   },
   {
     quote: 'GOD DID.',
     source: 'DJ Khaled',
     year: '2022',
-    tag: 'song'
   },
   {
     quote: "I don't have friends; I got family.",
     source: 'Dominic Toretto',
-    tag: 'movie'
   },
   {
     quote: "If you don't know, now you know.",
