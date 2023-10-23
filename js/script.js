@@ -74,8 +74,15 @@ const changeBgColor = () => {
 /* Stores quote object returned from getRandomQuote() and concatenates html code using string literals. The html code is then used to populate the quote-box in index.html
 */
 
+let randomQuote, currentQuote;
 const printQuote = () => {
-  const randomQuote = getRandomQuote();
+
+  // ensures new quote is different from last
+  do {
+    randomQuote = getRandomQuote();
+  } while (randomQuote === currentQuote);
+  currentQuote = randomQuote;
+
   let html = `
     <p class="quote">${randomQuote.quote}</p>
     <p class="source">${randomQuote.source}
