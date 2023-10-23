@@ -62,12 +62,12 @@ const getRandomQuote = () => {
 // Changes background color for each time button is clicked
 const changeBgColor = () => {
   // create random RGB value 0-255
-  const randomRGB = () => Math.floor(Math.random() * 255);
+  const randomRGB = () => Math.floor(Math.random() * 256);
 
-  const rgbOne = randomRGB();
-  const rgbTwo = randomRGB();
-  const rgbThree = randomRGB();
-  document.body.style.backgroundColor = `rgb(${rgbOne}, ${rgbTwo}, ${rgbThree})`;
+  const red = randomRGB();
+  const green = randomRGB();
+  const blue = randomRGB();
+  document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
 
 
