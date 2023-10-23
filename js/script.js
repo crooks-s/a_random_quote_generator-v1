@@ -87,7 +87,7 @@ const printQuote = () => {
     html += `<span class="year">${randomQuote.year}</span>`;
   }
   if (randomQuote.tag) {
-    html += `<span class="year">${randomQuote.tag}</span>`;
+    html += `<span class="tag">${randomQuote.tag}</span>`;
   }
   html += `</p>`;
 
@@ -95,7 +95,7 @@ const printQuote = () => {
   document.getElementById('quote-box').innerHTML = html; 
 }
 
-// refresh quotes at set interval of seconds
+// refresh quotes at set interval of milli-seconds
 setInterval(printQuote, 10000);
 
 /***
