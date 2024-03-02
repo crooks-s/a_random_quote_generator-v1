@@ -1,5 +1,5 @@
 # a_random_quote_generator-v1
-## Intro
+## Introduction
 Treehouse Unit 1 Project. This application presents a random quote generated from a hard-coded array of objects, at a set interval. There's also a button to show a random quote from the array.
 
 ## Tech Stack
@@ -13,7 +13,7 @@ The web page is incredibly basic, as it was the first project of the Treehouse F
 
 ## Running the Project
 Clone the project, and simply open ```index.html```
-<br /> Otherwise, I have the live version [here](https://crooks-s.github.io/a_random_quote_generator-v1/).
+<br /> Otherwise, I have a live version [here](https://crooks-s.github.io/a_random_quote_generator-v1/).
 
 ## Author
 Sean Crooks
